@@ -1,0 +1,71 @@
+.movie-container {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .movie-backdrop{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        height: 100%;
+        background-size:cover;
+        background-position: center;
+        filter: blur(5px);
+        z-index: -1;
+
+
+    }
+
+    .movie-content{
+        max-width: 80%;
+        padding: 40px;
+        background-color: rgba(0,0,0,.7);
+        border-radius: 10px;
+        display: flex;
+        gap: 20px;
+    }
+
+
+
+    .movie-poster img{
+        max-width: 250px;
+        border-radius: 5px;
+
+    }
+    .movie-info{
+        
+        .movie-title{
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+        .movie-tagline{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        .movie-overview{
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 15px,0;
+    
+        }
+        .movie-vote{
+            font-weight: bold;
+            margin-bottom: 10px;
+
+        }
+        .movie-date{
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .movie-button{
+            display: flex;
+            gap: 15px;
+        }
+
+
+    }
+
+}
